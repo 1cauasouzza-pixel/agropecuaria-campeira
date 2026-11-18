@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrinho - Agropecuária Campeira</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../imagens/favicon.png">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            <img
+                class="logo-imagem"
+                src="../imagens/agropecuaria_campeira.png"
+                alt="Identidade visual da Agropecuária Campeira"
+            >
+
+            <div>
+                <h1>Agropecuária Campeira</h1>
+                <p>Produtos e serviços para o campo</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="carrinho.html" class="ativo" aria-current="page">Carrinho</a>
+            <a href="agendamento.html">Agendamento</a>
+            <a href="contato.html">Contato</a>
+
+            <a href="../pagina de acesso/login.html" class="botao-login">
+                Entrar
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <section class="pagina-carrinho">
+
+            <h2>Meu carrinho</h2>
+
+            <!-- PRODUTOS SELECIONADOS -->
+            <section>
+                <h3>Produtos selecionados</h3>
+
+                <div id="lista-carrinho" aria-live="polite">
+                    <p>Seu carrinho está vazio.</p>
+                </div>
+            </section>
+
+            <!-- RESUMO DO PEDIDO -->
+            <section>
+                <h3>Resumo do pedido</h3>
+
+                <p>
+                    Total:
+                    <strong id="total">R$ 0,00</strong>
+                </p>
+            </section>
+
+            <!-- FORMA DE RECEBIMENTO -->
+            <section>
+
+                <h3>Forma de recebimento</h3>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="recebimento"
+                        value="retirada"
+                        checked
+                    >
+                    Retirada na loja
+                </label>
+
+                <br>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="recebimento"
+                        value="entrega"
+                    >
+                    Entrega
+                </label>
+
+            </section>
+
+            <!-- ENDEREÇO DE ENTREGA -->
+            <section id="endereco-entrega">
+
+                <h3>Endereço de entrega</h3>
+
+                <label for="endereco">Endereço:</label>
+
+                <input
+                    type="text"
+                    id="endereco"
+                    placeholder="Rua e número"
+                >
+
+                <label for="bairro">Bairro:</label>
+
+                <input
+                    type="text"
+                    id="bairro"
+                    placeholder="Digite o bairro"
+                >
+
+            </section>
+
+            <!-- FINALIZAÇÃO -->
+            <section>
+
+                <button type="button" id="finalizar-pedido">
+                    Enviar pedido pelo WhatsApp
+                </button>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div>
+            <h3>Agropecuária Campeira</h3>
+            <p>Produtos e serviços para o campo.</p>
+        </div>
+
+        <div>
+            <h3>Links rápidos</h3>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="agendamento.html">Agendamento</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <div>
+            <h3>Atendimento</h3>
+            <p>Entre em contato conosco.</p>
+            <a href="contato.html">Falar conosco</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Agropecuária Campeira
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/carrinho.js"></script>
+
+</body>
+</html>

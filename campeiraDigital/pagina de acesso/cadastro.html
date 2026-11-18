@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Agropecuária Campeira</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../imagens/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img
+                class="logo-imagem"
+                src="../imagens/agropecuaria_campeira.png"
+                alt="Identidade visual da Agropecuária Campeira"
+            >
+
+            <div>
+                <h1>Agropecuária Campeira</h1>
+                <p>Produtos e serviços para o campo</p>
+            </div>
+        </div>
+
+        <nav aria-label="Navegação principal">
+            <a href="../paginas publicas/index.html">Início</a>
+            <a href="login.html" class="botao-login">Entrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-login">
+
+            <h2>Criar conta</h2>
+
+            <p>
+                Cadastre-se para acessar a Agropecuária Campeira.
+            </p>
+
+            <form id="form-cadastro">
+
+                <label for="nome">Nome completo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="cpf">CPF</label>
+                <input
+                    type="text"
+                    id="cpf"
+                    name="cpf"
+                    inputmode="numeric"
+                    placeholder="Somente números ou CPF formatado"
+                    required
+                >
+
+                <label for="telefone">Telefone</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    autocomplete="tel"
+                    required
+                >
+
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input
+                    type="password"
+                    id="confirmar-senha"
+                    name="confirmar-senha"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <label for="endereco">Endereço</label>
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    autocomplete="street-address"
+                    required
+                >
+
+                <label for="numero">Número</label>
+                <input
+                    type="text"
+                    id="numero"
+                    name="numero"
+                    required
+                >
+
+                <label for="bairro">Bairro</label>
+                <input
+                    type="text"
+                    id="bairro"
+                    name="bairro"
+                    required
+                >
+
+                <button type="submit">Cadastrar</button>
+
+                <p id="mensagem-cadastro" role="status" aria-live="polite"></p>
+
+            </form>
+
+            <p>
+                Já possui uma conta?
+                <a href="login.html">Entrar</a>
+            </p>
+
+            <p>
+                <a href="../paginas publicas/index.html">
+                    Voltar ao início
+                </a>
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Agropecuária Campeira</h3>
+            <p>Produtos e serviços para o campo.</p>
+        </div>
+
+        <div>
+            <h3>Links rápidos</h3>
+            <a href="../paginas publicas/index.html">Início</a>
+            <a href="login.html">Entrar</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Agropecuária Campeira
+        </p>
+    </footer>
+
+    <script src="../js/cadastro.js"></script>
+
+</body>
+</html>
